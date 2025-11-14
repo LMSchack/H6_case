@@ -248,13 +248,54 @@ line vty 0 4
 line vty 5 15
  login
 !
-end"""
+end
+    """
         },
-    {"devicename": "DK-P1-SW04", "devicetype": "cisco_ios", "host": "10.1.99.14", "config": """ """},
-    {"devicename": "DK-P2-SW01", "devicetype": "cisco_ios", "host": "10.2.99.11", "config": """ """},
-    {"devicename": "DK-P4-SW01", "devicetype": "cisco_ios", "host": "10.4.99.11", "config": """ """},
-    {"devicename": "DK-P1-CRSW01", "devicetype": "cisco_ios", "host": "10.1.99.2", "config": """ """},
-    {"devicename": "DK-P1-CRSW02", "devicetype": "cisco_ios", "host": "10.1.99.3", "config": """ """},
-    {"devicename": "DK-P2-CRSW01", "devicetype": "cisco_ios", "host": "10.2.99.2", "config": """ """},
-    {"devicename": "DK-P4-CRSW01", "devicetype": "cisco_ios", "host": "10.4.99.2", "config": """ """}
+    {
+        "devicename": "DK-P1-SW04", 
+        "devicetype": "cisco_ios", 
+        "host": "10.1.99.14", 
+        "config": """ 
+     end
+     """},
+    {
+        "devicename": "DK-P2-SW01", 
+        "devicetype": "cisco_ios", 
+        "host": "10.2.99.11", 
+        "config": """ 
+     end
+     """},
+    {
+        "devicename": "DK-P4-SW01", 
+        "devicetype": "cisco_ios", 
+        "host": "10.4.99.11", 
+        "config": """ 
+     end
+     """},
+    {
+        "devicename": "DK-P1-CRSW01", 
+        "devicetype": "cisco_ios", 
+        "host": "10.1.99.2", 
+        "config": """ """},
+    {
+        "devicename": "DK-P1-CRSW02", 
+        "devicetype": "cisco_ios", 
+        "host": "10.1.99.3", 
+        "config": """ 
+        end
+        """},
+    {
+        "devicename": "DK-P2-CRSW01", 
+        "devicetype": "cisco_ios", 
+        "host": "10.2.99.2", 
+        "config": """ 
+        end
+        """},
+    {
+        "devicename": "DK-P4-CRSW01", 
+        "devicetype": "cisco_ios", 
+        "host": "10.4.99.2", 
+        "config": """ 
+        end
+        """}
 ]
