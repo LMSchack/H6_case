@@ -29,6 +29,7 @@ def controller_update_config_data(ip: str) -> dict:
             connection = connect_to_device(device_connection)
             config = get_run(connection)
             update_data(device["devicename"], config)
+            return "Updated device data succesfully"
             
     
 def controller_get_uncompliant_config() -> dict:

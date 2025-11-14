@@ -209,6 +209,9 @@ interface GigabitEthernet1/0/23
 interface GigabitEthernet1/0/24
  description Unused port in shutdown
  switchport mode access
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 4865.ee17.a5d6
+ switchport port-security
  spanning-tree portfast
  spanning-tree bpduguard enable
 !
