@@ -2,6 +2,7 @@ from netmiko import ConnectHandler
 import config_data as config_data
 import difflib
 
+#User login should moved to a cache or env
 user = {
     'username': 'admin',      # Replace with your router's username
     'password': 'Lucasersej123',   # Replace with your router's password
@@ -9,7 +10,7 @@ user = {
 }
 
 def connect_to_device(device):
-    # Establish a connection to the router
+    # Establish a connection to the device
     net_connect = ConnectHandler(**device)
     return net_connect
 
@@ -17,13 +18,13 @@ def get_run(net_connect):
     # Enter enable mode
     net_connect.enable()
 
-    # Send the configuration to the router
+    # Send the run command to the device
     output = net_connect.send_command("show run | begin version")
     
     return output
 
 def disconnect_from_device(net_connect):
-    # Disconnect from the router
+    # Disconnect from the device
     net_connect.disconnect()
 
 def create_host(host, devicetype, user):
@@ -34,7 +35,7 @@ def create_host(host, devicetype, user):
         'username': user['username'],
         'password': user['password'],
         'secret': user['secret'],
-        'global_delay_factor': 2,  # Increase delay factor if needed
+        'global_delay_factor': 2,
     }
     return device
 
